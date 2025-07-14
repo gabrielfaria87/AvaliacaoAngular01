@@ -1,59 +1,67 @@
-# AvaliacaoAngular
+Projeto Angular: Cálculo da Área ao Quadrado e Consumo de API
+Este projeto foi desenvolvido em Angular 19 para realizar duas funcionalidades principais:
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+Cálculo da área ao quadrado a partir das dimensões (largura e altura) fornecidas pelo usuário.
 
-## Development server
+Consumo de API para listar dados, como postagens, de um servidor externo.
 
-To start a local development server, run:
+Funcionalidades
+1. Cálculo da Área ao Quadrado
+O projeto permite que o usuário insira a largura e a altura de uma superfície e, ao clicar em "Calcular", o sistema exibe a área da superfície ao quadrado.
 
-```bash
-ng serve
-```
+Input de Largura e Altura: O usuário insere os valores de largura e altura.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Cálculo: Ao clicar no botão "Calcular", a área é calculada e exibida.
 
-## Code scaffolding
+2. Consumo de API
+A aplicação consome uma API externa (utilizando o serviço AuthApiService) para listar posts de um servidor fictício. Os dados da API são exibidos em uma tabela com os seguintes campos:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+ID
 
-```bash
-ng generate component component-name
-```
+Título
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Body
 
-```bash
-ng generate --help
-```
+Os dados são obtidos utilizando o serviço AuthApiService e exibidos no componente AuthApiComponent.
 
-## Building
+3. Navegação entre Páginas
+O componente Home oferece links para navegar entre as páginas:
 
-To build the project run:
+Página para calcular a área ao quadrado.
 
-```bash
-ng build
-```
+Página para listar dados da API.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Tecnologias Utilizadas
+Angular 19: Framework para a construção da aplicação.
 
-## Running unit tests
+TypeScript: Linguagem para o desenvolvimento da aplicação.
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+HTML e CSS: Para estruturação e estilização da interface.
 
-```bash
-ng test
-```
+RxJS: Para o gerenciamento de fluxos assíncronos.
 
-## Running end-to-end tests
+Angular Router: Para a navegação entre as páginas da aplicação.
 
-For end-to-end (e2e) testing, run:
+Estrutura de Diretórios
+A estrutura de diretórios do projeto é organizada da seguinte forma:
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+ruby
+Copiar
+Editar
+src/
+├── app/
+│   ├── components/               # Componentes da aplicação
+│   │   ├── auth-api/             # Componente para consumir a API
+│   │   ├── calcular-quadrado/    # Componente para calcular a área ao quadrado
+│   │   └── home/                 # Componente de Home
+│   ├── service/                  # Serviços para lógica de cálculo e consumo de API
+│   │   ├── auth-api.service.ts   # Serviço de consumo da API
+│   │   ├── calcular-quadrado.service.ts  # Serviço para calcular área ao quadrado
+│   ├── app.routes.ts             # Configuração de rotas
+│   ├── app.component.ts          # Componente raiz
+│   └── app.module.ts             # Módulo principal
+├── assets/                       # Arquivos estáticos
+├── environments/                 # Configurações de ambientes (desenvolvimento, produção)
+├── index.html                    # Arquivo principal de HTML
+├── styles.css                    # Arquivo global de estilos
+└── main.ts                       # Ponto de entrada da aplicação
