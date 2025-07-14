@@ -1,53 +1,53 @@
-Projeto Angular: Cálculo da Área ao Quadrado e Consumo de API
+
+**Projeto Angular: Cálculo da Área ao Quadrado e Consumo de API**
+
 Este projeto foi desenvolvido em Angular 19 para realizar duas funcionalidades principais:
 
-Cálculo da área ao quadrado a partir das dimensões (largura e altura) fornecidas pelo usuário.
+**1. Cálculo da área ao quadrado** a partir das dimensões (largura e altura) fornecidas pelo usuário.
 
-Consumo de API para listar dados, como postagens, de um servidor externo.
+**Consumo de API** para listar dados, como postagens, de um servidor externo.
 
-Funcionalidades
-1. Cálculo da Área ao Quadrado
+**Funcionalidades**
+**1. Cálculo da Área ao Quadrado**
 O projeto permite que o usuário insira a largura e a altura de uma superfície e, ao clicar em "Calcular", o sistema exibe a área da superfície ao quadrado.
 
-Input de Largura e Altura: O usuário insere os valores de largura e altura.
+**Input de Largura e Altura:** O usuário insere os valores de largura e altura.
 
-Cálculo: Ao clicar no botão "Calcular", a área é calculada e exibida.
+**Cálculo:** Ao clicar no botão "Calcular", a área é calculada e exibida.
 
-2. Consumo de API
+**2. Consumo de API**
 A aplicação consome uma API externa (utilizando o serviço AuthApiService) para listar posts de um servidor fictício. Os dados da API são exibidos em uma tabela com os seguintes campos:
 
-ID
+**ID**
 
-Título
+**Título**
 
-Body
+**Body**
 
 Os dados são obtidos utilizando o serviço AuthApiService e exibidos no componente AuthApiComponent.
 
-3. Navegação entre Páginas
-O componente Home oferece links para navegar entre as páginas:
+**3. Navegação entre Páginas**
+O componente **Home** oferece links para navegar entre as páginas:
 
 Página para calcular a área ao quadrado.
 
 Página para listar dados da API.
 
-Tecnologias Utilizadas
-Angular 19: Framework para a construção da aplicação.
 
-TypeScript: Linguagem para o desenvolvimento da aplicação.
+**Tecnologias Utilizadas**
+**Angular 19:** Framework para a construção da aplicação.
 
-HTML e CSS: Para estruturação e estilização da interface.
+**TypeScript:** Linguagem para o desenvolvimento da aplicação.
 
-RxJS: Para o gerenciamento de fluxos assíncronos.
+**HTML e CSS:** Para estruturação e estilização da interface.
 
-Angular Router: Para a navegação entre as páginas da aplicação.
+**RxJS:** Para o gerenciamento de fluxos assíncronos.
 
-Estrutura de Diretórios
+**Angular Router:** Para a navegação entre as páginas da aplicação.
+
+**Estrutura de Diretórios**
 A estrutura de diretórios do projeto é organizada da seguinte forma:
 
-ruby
-Copiar
-Editar
 src/
 ├── app/
 │   ├── components/               # Componentes da aplicação
@@ -65,3 +65,6 @@ src/
 ├── index.html                    # Arquivo principal de HTML
 ├── styles.css                    # Arquivo global de estilos
 └── main.ts                       # Ponto de entrada da aplicação
+
+
+
