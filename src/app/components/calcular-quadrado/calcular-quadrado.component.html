@@ -1,0 +1,19 @@
+
+<button routerLink="/">Home</button><br><br>
+
+
+
+<h2>Calcular Área ao Quadrado</h2>
+
+<label>Largura: <input type="number" [(ngModel)]="largura"></label><br>
+<label>Altura: <input type="number" [(ngModel)]="altura"></label><br>
+
+<button (click)="calcular()">Calcular</button>
+
+
+
+
+<div *ngIf="resultado !== null">
+  <p>Área ao quadrado: {{ resultado }}</p>
+</div>
+

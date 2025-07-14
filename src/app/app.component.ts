@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
+import { HomeComponent } from './components/home/home.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true,
+  imports: [RouterModule, RouterOutlet],
+  template: `<router-outlet></router-outlet>`
 })
 export class AppComponent {
-  title = 'avaliacao-angular';
+public title = 'avaliacao-angular'
 }

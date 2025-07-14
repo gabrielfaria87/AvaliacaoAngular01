@@ -1,0 +1,19 @@
+<h2>Dados da API</h2>
+<table border="1">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Título</th>
+      <th>Body</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let post of posts">
+      <td>{{ post.id }}</td>
+      <td>{{ post.title }}</td>
+      <td>{{ post.body }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<button routerLink="/home">Home</button>
